@@ -3,66 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | BTS SIO SLAM</title>
+    <title>Portfolio | Développeur SLAM</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav>
-        <div class="logo">Dev<span>SLAM</span></div>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#veille">Veille</a></li>
-        </ul>
+        <div class="nav-content">
+            <div class="logo">BTSSIO.<span>SLAM</span></div>
+            <div class="nav-links">
+                <a href="#stages">Stages</a>
+                <a href="#projets">Projets</a>
+                <a href="#competences">Compétences</a>
+            </div>
+        </div>
     </nav>
 
-    <header id="home">
+    <header>
         <div class="hero">
-            <h1>Développeur d'Applications</h1>
-            <p>Étudiant en BTS SIO Option SLAM • Spécialisé en développement Fullstack & Cybersécurité</p>
-            <a href="#projets" class="btn">Voir mes réalisations</a>
+            <span class="status-badge">Disponible pour alternance</span>
+            <h1>Développeur Solutions Applicatives</h1>
+            <p>Spécialisé en Full-Stack (Node.js/React). Une expertise forgée au CH Alpes Isère.</p>
         </div>
     </header>
 
-    <section id="competences">
-        <h2>Compétences Référentiel SIO</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>B1 : Support et mise à disposition</h3>
-                <p>Gestion du patrimoine applicatif, réponse aux incidents et assistance utilisateur.</p>
-            </div>
-            <div class="card">
-                <h3>B2 : Développement d'applications</h3>
-                <p>Conception, programmation (C#, PHP, JS, Java) et tests unitaires.</p>
-            </div>
-            <div class="card">
-                <h3>B3 : Cybersécurité</h3>
-                <p>Protection des données, sécurisation des développements et des accès.</p>
-            </div>
-        </div>
-    </section>
+    <main class="container">
+        
+        <section id="stages">
+            <h2 class="section-title">Expériences en Stage</h2>
+            <div class="grid" id="stages-grid">
+                </div>
+        </section>
 
-    <section id="projets">
-        <h2>Réalisations Professionnelles</h2>
-        <div class="project-list" id="project-container">
-            </div>
-    </section>
-    <section id="veille">
-    <h2>Veille Technologique</h2>
-    <div class="veille-intro">
-        <p>Ma méthodologie repose sur l'utilisation d'outils d'agrégation de flux (RSS), de newsletters spécialisées et de plateformes communautaires.</p>
-        <div class="outils-veille">
-            <span><i class="fab fa-fedora"></i> Feedly</span>
-            <span><i class="fab fa-github"></i> GitHub Trends</span>
-            <span><i class="fab fa-medium"></i> Medium Engineering</span>
-        </div>
-    </div>
+        <section id="projets">
+            <h2 class="section-title">Réalisations Techniques</h2>
+            <div class="grid" id="projets-grid">
+                </div>
+        </section>
 
-    <div class="grid" id="veille-container">
-        </div>
-</section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Portfolio Numérique E4 - [Ton Prénom] [Ton Nom]</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
