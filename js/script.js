@@ -1,61 +1,61 @@
+const experiences = [
+    {
+        lieu: "Centre Hospitalier Alpes Isère (CHAI)",
+        periode: "2025 - 2026",
+        titre: "Stagiaire Développeur",
+        missions: "Conception d'un script Python d'alerte réseau (SMTP) et maintenance de parc applicatif.",
+        blocs: "Bloc 1 & 3"
+    }
+];
+
 const projets = [
     {
-        titre: "Application GSB",
-        description: "Gestion des frais de visite des délégués (PHP/MVC)",
-        tags: ["PHP", "MySQL", "Architecture MVC"]
+        titre: "Suivi Scolaire (Pronote Style)",
+        stack: "React / Node.js",
+        description: "Dashboard complet pour la gestion pédagogique des élèves et des notes.",
+        ref: "Bloc 2 : Conception Applicative"
     },
     {
-        titre: "Support Tickets",
-        description: "Application de gestion d'incidents (C# .NET)",
-        tags: ["C#", "SQL Server", "B1"]
+        titre: "Gestion Hôtelière",
+        stack: "Node.js / Semantic-UI",
+        description: "Application d'équipe pour le suivi des réservations et du personnel.",
+        ref: "Bloc 2 : Travail d'équipe"
+    },
+    {
+        titre: "Gestion Client CRUD",
+        stack: "React.js",
+        description: "Application dynamique de gestion de base de données clients.",
+        ref: "Bloc 2 : Développement"
+    },
+    {
+        titre: "Todo List Java",
+        stack: "Java (POO)",
+        description: "Application bureau développée en autonomie.",
+        ref: "Bloc 2 : POO"
     }
 ];
 
-const container = document.getElementById('project-container');
+function init() {
+    const stageGrid = document.getElementById('stages-grid');
+    const projetGrid = document.getElementById('projets-grid');
 
-projets.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-        <h3>${p.titre}</h3>
-        <p>${p.description}</p>
-        <div class="tags">${p.tags.map(t => `<span>#${t}</span>`).join(' ')}</div>
-    `;
-    container.appendChild(card);
-});
+    stageGrid.innerHTML = experiences.map(exp => `
+        <div class="card">
+            <span class="card-badge">${exp.periode}</span>
+            <h3>${exp.lieu}</h3>
+            <p>${exp.missions}</p>
+            <div class="card-footer">${exp.blocs}</div>
+        </div>
+    `).join('');
 
-// Petit effet de scroll fluide
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-const veilles = [
-    {
-        sujet: "L'Intelligence Artificielle dans le cycle de vie du logiciel",
-        description: "Étude de l'impact de GitHub Copilot et des LLM sur la productivité et la qualité du code (Clean Code).",
-        lien: "#" // Lien vers ton dossier PDF ou un article
-    },
-    {
-        sujet: "Architecture Micro-services & Serverless",
-        description: "Comment le passage du monolithique au micro-service transforme la scalabilité des applications web.",
-        lien: "#"
-    }
-];
+    projetGrid.innerHTML = projets.map(p => `
+        <div class="card">
+            <span class="card-badge">${p.stack}</span>
+            <h3>${p.titre}</h3>
+            <p>${p.description}</p>
+            <div class="card-footer">${p.ref}</div>
+        </div>
+    `).join('');
+}
 
-const veilleContainer = document.getElementById('veille-container');
-
-veilles.forEach(v => {
-    const article = document.createElement('div');
-    article.className = 'card';
-    article.innerHTML = `
-        <span class="tag-sujet">Sujet de Veille</span>
-        <h3>${v.sujet}</h3>
-        <p>${v.description}</p>
-        <a href="${v.lien}" target="_blank" style="color:var(--primary); text-decoration:none; font-weight:bold;">Lire la synthèse →</a>
-    `;
-    veilleContainer.appendChild(article);
-});
+document.addEventListener('DOMContentLoaded', init);
