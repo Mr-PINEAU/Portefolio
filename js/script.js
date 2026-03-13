@@ -1,3 +1,5 @@
+alert("Le JavaScript est bien chargé !");
+
 const experiences = [
     {
         lieu: "Centre Hospitalier Alpes Isère (CHAI)",
