@@ -1,1 +1,1 @@
-# Portefolio
+Un portefolio simple (HTML, CSS et Javascript) qui met en exergue un aperçu des compétences que l'on peut acquérire pour un étudiant en 2nd année de BTS SIO (Système Informatique aux Organisations) option SLAM (Solution Logiciel et Application Métier), avec évidemment du travail personnel à la clés .
