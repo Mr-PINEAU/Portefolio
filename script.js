@@ -45,6 +45,8 @@ const projets = [
     }
 ];
 
+
+
 function init() {
     const stageGrid = document.getElementById('stages-grid');
     const projetGrid = document.getElementById('projets-grid');
