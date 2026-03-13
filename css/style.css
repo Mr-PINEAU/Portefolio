@@ -5,7 +5,7 @@
     --card-bg: #ffffff;
     --text-main: #0f172a;
     --text-muted: #64748b;
-    --border: #e2e8f0;
+    --border: #b5bbc2;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -20,7 +20,7 @@ body {
 
 /* Navigation */
 nav {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(95, 230, 147, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     position: sticky;
@@ -90,7 +90,7 @@ header p { color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin
     font-size: 0.7rem;
     font-weight: 800;
     color: var(--primary);
-    background: #eff6ff;
+    background: #d8dde4;
     padding: 4px 12px;
     border-radius: 6px;
     margin-bottom: 1.5rem;
