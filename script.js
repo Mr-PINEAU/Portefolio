@@ -45,6 +45,24 @@ const projets = [
     }
 ];
 
+const competences = [
+    { categorie: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "React"] },
+    { categorie: "Backend", items: ["Node.js", "PHP", "Python", "Java"] },
+    { categorie: "Bases de données", items: ["MySQL", "PostgreSQL", "MongoDB", "ORM"] },
+    { categorie: "Outils & DevOps", items: ["Git", "GitHub", "VS Code", "Docker"] },
+    { categorie:  "Securisation code", items: ["Test unitaire", "Conception avant développement", "Certificat","Chiffrement des données"]}
+];
+
+const compGrid = document.getElementById('competences-grid');
+
+compGrid.innerHTML = competences.map(cat => `
+    <div class="comp-category">
+        <h3>${cat.categorie}</h3>
+        <div class="comp-list">
+            ${cat.items.map(item => `<span class="comp-badge">${item}</span>`).join('')}
+        </div>
+    </div>
+`).join('');
 
 
 function init() {
