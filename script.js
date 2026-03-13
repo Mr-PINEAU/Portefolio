@@ -50,7 +50,7 @@ const competences = [
     { categorie: "Backend", items: ["Node.js", "PHP", "Python", "Java"] },
     { categorie: "Bases de données", items: ["MySQL", "PostgreSQL", "MongoDB", "ORM"] },
     { categorie: "Outils & DevOps", items: ["Git", "GitHub", "VS Code", "Docker"] },
-    { categorie:  "Securisation code", items: ["Test unitaire", "Conception avant développement", "Certificat","Chiffrement des données"]}
+    { categorie:  "Securisation code", items: ["Test unitaire, Conception avant développement, Certificat, Chiffrement des données , etc"]}
 ];
 
 const compGrid = document.getElementById('competences-grid');
