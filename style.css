@@ -126,7 +126,7 @@ html {
 .contact-cta {
     background: var(--primary);
     color: white !important;
-    padding: 8px 18px;
+    padding: 8px 5px;
     border-radius: 8px;
     transition: background 0.3s;
 }
@@ -137,7 +137,7 @@ html {
 
 /* Section Contact en bas de page */
 .contact-card {
-    background: linear-gradient(135deg, #2563eb, #6366f1);
+    background: linear-gradient(135deg, #71cc0a, #6366f1);
     color: white;
     padding: 4rem 2rem;
     border-radius: 24px;
@@ -161,4 +161,38 @@ html {
 
 .mail-button:hover {
     transform: scale(1.05);
+}
+
+/* 1. On s'assure que le parent est la référence */
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+/* 2. On CACHE le menu par défaut */
+.dropdown-content {
+    display: none;             /* CRUCIAL : cache le menu */
+    position: absolute;        /* Sort le menu du flux pour qu'il flotte */
+    top: 100%;                 /* Se place juste sous le bouton */
+    right: 0;                  /* Aligne le menu à droite du bouton */
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+/* 3. On l'AFFICHE uniquement au survol du parent */
+.dropdown:hover .dropdown-content {
+    display: block !important; /* Force l'affichage au survol */
+}
+
+/* On force les liens du menu à être l'un sous l'autre */
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
 }

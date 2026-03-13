@@ -7,6 +7,14 @@ const experiences = [
         titre: "Stagiaire Développeur",
         missions: "Conception d'un script Python d'alerte réseau (SMTP) et maintenance de parc applicatif.",
         blocs: "Bloc 1 & 3"
+    },
+
+    {
+        lieu: "Centre Hospitalier Alpes Isère (CHAI)",
+        periode: "2024 - 2025",
+        titre: "Stagiaire Développeur",
+        missions: "Conception de formulaire web pour l'intranet du CHAI, formatage de données médicale en powershell",
+        blocs: "Bloc 1 , 2 et 3"
     }
 ];
 
