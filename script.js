@@ -1,4 +1,4 @@
-alert("Le JavaScript est bien chargé !");
+
 
 const experiences = [
     {
